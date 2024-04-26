@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.2s ease-in-out;
     scroll-behavior: smooth;
 }
 
@@ -16,38 +16,194 @@ img {
     max-width: 100%;
 }
 
+h1 {
+    font-size: 32px;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: normal;
+}
+
 /*Navbar*/
 
 header {
     position: fixed;
+    width: 100%;
+    color: #F5F5F5;
 }
 
-hr {
+.header-scrolled {
+    background-color: #141414;
     color: #F5F5F5;
+}
+
+#hr-nav {
+    border-top: 1px;
+    color: #F5F5F5;
+    margin-inline: 60px;
 }
 
 #navbar-list ul {
     display: flex;
     list-style-type: none;
     gap: 30px;
+    color: #F5F5F5;
+    width: fit-content;
+    text-align: center;
 }
 
 #navbar-list ul a {
     text-decoration: none;
+    color: #F5F5F5;
+}
+
+#navbar-list li :hover {
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 #nav-main {
     display: flex;
+    justify-content: space-between;
+    margin: 10px 6.6vw;
 }
 
 header p {
-    margin-left: 50px;
+    font-weight: bold;
 }
 
 #navbar-list {
-    margin-right: 50px;
+    align-items: baseline;
 }
+
+.nav-item {
+    width: 60px;
+    text-align: center;
+}
+
+
+/*Hero section*/
 
 #hero-section img {
     width: 100%;
+}
+
+#testo-hero {
+    color: #F5F5F5;
+    position: absolute;
+    z-index: 0;
+    top: 10vw;
+    left: 6.6vw;
+}
+
+
+#hero-titolo {
+    font-size: 6vw;
+    font-weight: bold;
+}
+
+#hero-sottotitolo {
+    font-size: 2vw;
+    font-weight: bold;
+    width: 30vw;
+    margin-bottom: 16px;
+}
+
+#hero-paragrafo {
+    font-size: 1.5vw;
+    width: 30.1vw;
+}
+
+
+/*Sezioni del main*/
+
+#sezione-inaugurazione, #sezione-artisti-in-mostra, #sezione-info-utili {
+    margin: 60px 6.6vw 100px 6.6vw;
+}
+
+#testo-inaugurazione, .testo-artisti-in-mostra, .testo-info-utili {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.hr-sezione {
+    margin: 0 0 60px 0;
+}
+
+.testo-artisti-in-mostra img {
+    width: 195.09px;
+    height: 230.93px;
+    margin: 0 10px;
+    border-radius: 20px;
+    margin: 0 22px 22px 0px;
+    object-fit: cover;
+}
+
+.testo-artisti-in-mostra {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 60px;
+}
+
+h1 {
+    margin-bottom: 16px;
+}
+
+.testo-sx {
+    font-weight: bold;
+    width: 307px;
+}
+
+.testo-dx {
+    width: 644px;
+    margin-bottom: 20px;
+}
+
+.testo-info-utili {
+    margin-bottom: 60px;
+}
+
+#mappa-aba {
+    width: 644px;
+    height: 522px;
+    margin-top: 40px;
+}
+
+#sezione-info-utili {
+    margin-bottom: 60px;
+}
+
+
+/*Footer*/
+
+#hr-footer {
+    border-top: 1px;
+    color: #141414;
+    margin-inline: 60px;
+}
+
+#blocco-footer {
+    margin: 0 6.6vw;
+}
+
+#aba-footer {
+    margin: 20px 0 16px 0;
+}
+
+#info-footer {
+    display: flex;
+    gap: 32px;
+}
+
+#info-footer-icons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+#icons-footer {
+    width: 115px;
+    gap: 32px;
+    display: inherit;
 }

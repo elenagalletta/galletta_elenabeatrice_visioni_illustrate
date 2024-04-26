@@ -3,28 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Visioni Illustrate</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/icons/tavolozza.png">
     <link rel="stylesheet" href="/css/style.css">
+    <script src="header.js"></script> 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
+    <header id="header">
+        <!--Navbar-->
         <nav>
             <div id="nav-main">
                 <p>Visioni Illustrate</p>
                 <div id="navbar-list">
                     <ul>
-                        <li><a href="https://www.google.com/">Home</a></li>
-                        <li><a href="https://www.google.com/">Artisti</a></li>
-                        <li><a href="https://www.google.com/">Progetto</a></li>
-                        <li><a href="https://www.google.com/">Info</a></li>
+                        <li class="nav-item"><a href="https://www.google.com/">Home</a></li>
+                        <li class="nav-item"><a href="https://www.google.com/">Artisti</a></li>
+                        <li class="nav-item"><a href="https://www.google.com/">Mostra</a></li>
+                        <li class="nav-item"><a href="https://www.google.com/">Info</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
-        <hr/>
+        <hr id="hr-nav"/>
     </header>
 
 
@@ -33,33 +36,33 @@
         <div id="hero-section">
             <img src="/img/hero.jpg"></img>
             <div id="testo-hero">
-                <p>Visioni illustrate</p>
-                <p>Viaggio nell'illustrazione contemporanea</p>
-                <p>Inaugurazione 01/05/24 ore 18:00 presso l'Accademia di Belle Arti di Catania - Via Franchetti n° 5 (CT)</p>
+                <p id="hero-titolo">Visioni illustrate</p>
+                <p id="hero-sottotitolo">Viaggio nell'illustrazione contemporanea</p>
+                <p id="hero-paragrafo">Inaugurazione 01/05/24 ore 18:00 presso l'Accademia di Belle Arti di Catania - Via Franchetti n° 5 (CT)</p>
             </div>
         </div>
 
         <!--Sezione inaugurazione-->
-        <div>
-            <p>Inaugurazione</p>
-            <hr/>
-            <div>
-                <p>1-31 Maggio - Accademia di Belle Arti - Via Raimondo Franchetti n°5 Catania</p>
+        <div id="sezione-inaugurazione">
+            <h1>Inaugurazione</h1>
+            <hr class="hr-sezione"/>
+            <div id="testo-inaugurazione">
+                <h2 class="testo-sx">1-31 Maggio - Accademia di Belle Arti - Via Raimondo Franchetti n°5 Catania</h2>
                 <div>
-                    <p>La mostra "Visioni Illustrate: Viaggio nell'Illustrazione Contemporanea" inaugurerà il primo maggio alle 18:00, segnando l'inizio di un'esclusiva esposizione dedicata all'illustrazione contemporanea che promette di essere un punto di riferimento culturale per il mese a venire.</p>
-                    <p>Questo evento speciale offrirà agli appassionati d'arte, agli illustratori, ai designer e al pubblico generale l'opportunità di immergersi in un mondo dove la creatività non conosce confini.</p>
-                    <p>L'inaugurazione sarà non solo un'anteprima delle opere esposte, ma anche un'occasione per incontrare alcuni degli artisti partecipanti, condividere pensieri e discutere le diverse interpretazioni e ispirazioni dietro ogni pezzo.</p>
+                    <h2 class="testo-dx">La mostra "Visioni Illustrate: Viaggio nell'Illustrazione Contemporanea" inaugurerà il primo maggio alle 18:00, segnando l'inizio di un'esclusiva esposizione dedicata all'illustrazione contemporanea che promette di essere un punto di riferimento culturale per il mese a venire.</h2>
+                    <h2 class="testo-dx">Questo evento speciale offrirà agli appassionati d'arte, agli illustratori, ai designer e al pubblico generale l'opportunità di immergersi in un mondo dove la creatività non conosce confini.</h2>
+                    <h2 class="testo-dx">L'inaugurazione sarà non solo un'anteprima delle opere esposte, ma anche un'occasione per incontrare alcuni degli artisti partecipanti, condividere pensieri e discutere le diverse interpretazioni e ispirazioni dietro ogni pezzo.</h2>
                 </div>
             </div>
         </div>
 
         <!--Sezione artisti in mostra-->
-        <div>
-            <p>Gli artisti in mostra</p>
-            <hr/>
+        <div id="sezione-artisti-in-mostra">
+            <h1>Gli artisti in mostra</h1>
+            <hr class="hr-sezione"/>
             <div>
-                <div>
-                    <p>Paul Blow, Jean Julien, Martina Paukova</p>
+                <div class="testo-artisti-in-mostra">
+                    <h2 class="testo-sx">Paul Blow, Jean Julien, Martina Paukova</h2>
                     <div>
                         <img src="/img/paulblow_card.jpg"></img>
                         <img src="/img/jeanjulien_card.jpg"></img>
@@ -67,8 +70,8 @@
                     </div>
                 </div>
 
-                <div>
-                    <p>Adrian Johnson, Sanna Mander, Emily Robertson</p>
+                <div class="testo-artisti-in-mostra">
+                    <h2 class="testo-sx">Adrian Johnson, Sanna Mander, Emily Robertson</h2>
                     <div>
                         <img src="/img/adrianjohnson_card.jpg"></img>
                         <img src="/img/sannamander_card.jpg"></img>
@@ -76,8 +79,8 @@
                     </div>
                 </div>
 
-                <div>
-                    <p>Hattie Clark, Michelle Thompson, Icinori</p>
+                <div class="testo-artisti-in-mostra">
+                    <h2 class="testo-sx">Hattie Clark, Michelle Thompson, Icinori</h2>
                     <div>
                         <img src="/img/hattieclark_card.jpg"></img>
                         <img src="/img/michellethompson_card.jpg"></img>
@@ -88,47 +91,47 @@
         </div>
 
         <!--Sezione info utili-->
-        <div>
-            <p>Gli artisti in mostra</p>
-            <hr/>
-            <div>
-                <p>Cosa e perchè</p>
+        <div id="sezione-info-utili">
+            <h1>Info utili</h1>
+            <hr class="hr-sezione"/>
+            <div class="testo-info-utili">
+                <h2 class="testo-sx">Cosa e perchè</h2>
                 <div>
-                    <p>Visioni Illustrate: Viaggio nell'Illustrazione Contemporanea è una mostra esclusiva che apre una finestra sul vibrante mondo dell'illustrazione contemporanea, portando alla luce le più innovative e suggestive espressioni artistiche di questo settore.</p>
-                    <p>Attraversando una varietà di stili, tecniche e temi, questa esposizione celebra la diversità e la ricchezza creativa degli illustratori contemporanei, offrendo ai visitatori un viaggio affascinante attraverso la loro visione del mondo.</p>
-                    <p>La mostra presenta una collezione curata di opere che esplorano l'ampio spettro dell'illustrazione, dalla narrazione visiva alla sperimentazione artistica, dall'uso di tecniche tradizionali come l'acquerello e l'inchiostro, fino alle più avanzate applicazioni digitali.</p>
+                    <h2 class="testo-dx">Visioni Illustrate: Viaggio nell'Illustrazione Contemporanea è una mostra esclusiva che apre una finestra sul vibrante mondo dell'illustrazione contemporanea, portando alla luce le più innovative e suggestive espressioni artistiche di questo settore.</h2>
+                    <h2 class="testo-dx">Attraversando una varietà di stili, tecniche e temi, questa esposizione celebra la diversità e la ricchezza creativa degli illustratori contemporanei, offrendo ai visitatori un viaggio affascinante attraverso la loro visione del mondo.</h2>
+                    <h2 class="testo-dx">La mostra presenta una collezione curata di opere che esplorano l'ampio spettro dell'illustrazione, dalla narrazione visiva alla sperimentazione artistica, dall'uso di tecniche tradizionali come l'acquerello e l'inchiostro, fino alle più avanzate applicazioni digitali.</h2>
                 </div>
             </div>
 
-            <div>
-                <p>Artisti, opere e a chi è rivolta</p>
+            <div class="testo-info-utili">
+                <h2 class="testo-sx">Artisti, opere e a chi è rivolta</h2>
                 <div>
-                    <p>Gli artisti selezionati provengono da vari angoli del globo, ciascuno con la propria voce unica, in grado di trasportare lo spettatore in universi paralleli, paesaggi onirici e scenari caricati di emotività e introspezione.</p>
-                    <p>Visioni Illustrate non è solo un'esposizione, ma un dialogo aperto tra gli artisti e il pubblico, una celebrazione del potere dell'illustrazione di raccontare storie, evocare emozioni e stimolare riflessioni.</p>
-                    <p>Le opere in mostra spaziano da quelle che affrontano tematiche attuali e socialmente rilevanti, a rappresentazioni che indagano il confine tra il reale e l'immaginario, dimostrando come l'illustrazione possa essere un potente strumento di commento sociale e allo stesso tempo di pura evasione estetica.</p>
-                    <p>Curata con l'intento di ispirare e coinvolgere, la mostra è un invito a scoprire le infinite possibilità espressive dell'illustrazione contemporanea, promuovendo un apprezzamento più profondo per questa forma d'arte sempre in evoluzione.</p>
-                    <p>Visioni Illustrate è quindi un must per appassionati d'arte, illustratori, designer e chiunque sia interessato a esplorare le nuove frontiere dell'espressione creativa.</p>
+                    <h2 class="testo-dx">Gli artisti selezionati provengono da vari angoli del globo, ciascuno con la propria voce unica, in grado di trasportare lo spettatore in universi paralleli, paesaggi onirici e scenari caricati di emotività e introspezione.</h2>
+                    <h2 class="testo-dx">Visioni Illustrate non è solo un'esposizione, ma un dialogo aperto tra gli artisti e il pubblico, una celebrazione del potere dell'illustrazione di raccontare storie, evocare emozioni e stimolare riflessioni.</h2>
+                    <h2 class="testo-dx">Le opere in mostra spaziano da quelle che affrontano tematiche attuali e socialmente rilevanti, a rappresentazioni che indagano il confine tra il reale e l'immaginario, dimostrando come l'illustrazione possa essere un potente strumento di commento sociale e allo stesso tempo di pura evasione estetica.</h2>
+                    <h2 class="testo-dx">Curata con l'intento di ispirare e coinvolgere, la mostra è un invito a scoprire le infinite possibilità espressive dell'illustrazione contemporanea, promuovendo un apprezzamento più profondo per questa forma d'arte sempre in evoluzione.</h2>
+                    <h2 class="testo-dx">Visioni Illustrate è quindi un must per appassionati d'arte, illustratori, designer e chiunque sia interessato a esplorare le nuove frontiere dell'espressione creativa.</h2>
                 </div>
             </div>
 
-            <div>
-                <p>Laboratorio bambini</p>
+            <div class="testo-info-utili">
+                <h2 class="testo-sx">Laboratorio bambini</h2>
                 <div>
-                    <p>Il laboratorio creativo per bambini è un'avventura artistica pensata per stimolare l'immaginazione e la creatività dei più piccoli.</p>
-                    <p>Attraverso attività manuali, disegno e pittura, i bambini avranno l'opportunità di esplorare diverse tecniche artistiche in un ambiente divertente e accogliente.</p>
-                    <p>Guidati da istruttori esperti, impareranno a esprimere le proprie idee e emozioni creando opere d'arte uniche.</p>
-                    <p>Questo workshop è progettato non solo per sviluppare le abilità artistiche, ma anche per incoraggiare il lavoro di squadra, la fiducia in sé e l'apprezzamento per l'arte.</p>
-                    <p>Un'esperienza educativa e coinvolgente, perfetta per liberare la fantasia e il talento di ogni bambino.</p>
+                    <h2 class="testo-dx">Il laboratorio creativo per bambini è un'avventura artistica pensata per stimolare l'immaginazione e la creatività dei più piccoli.</h2>
+                    <h2 class="testo-dx">Attraverso attività manuali, disegno e pittura, i bambini avranno l'opportunità di esplorare diverse tecniche artistiche in un ambiente divertente e accogliente.</h2>
+                    <h2 class="testo-dx">Guidati da istruttori esperti, impareranno a esprimere le proprie idee e emozioni creando opere d'arte uniche.</h2>
+                    <h2 class="testo-dx">Questo workshop è progettato non solo per sviluppare le abilità artistiche, ma anche per incoraggiare il lavoro di squadra, la fiducia in sé e l'apprezzamento per l'arte.</h2>
+                    <h2 class="testo-dx">Un'esperienza educativa e coinvolgente, perfetta per liberare la fantasia e il talento di ogni bambino.</h2>
                 </div>
             </div>
 
-            <div>
-                <p>Quando e come trovarci</p>
+            <div class="testo-info-utili">
+                <h2 class="testo-sx">Quando e come trovarci</h2>
                 <div>
                     <div>
-                        <p>L'inaugurazione si terrà il 01/05/24 ore 18:00 presso l'Accademia di Belle Arti di Catania - Via Franchetti n° 5 (CT).</p>
-                        <p>La mostra sarà visitabile tutti i giorni nel periodo 1-31 Maggio 2024.</p>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1582.3945509180603!2d15.074661836220864!3d37.51289199745738!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1313fcd2c25c1883%3A0xbe3c697761685651!2sAccademia%20di%20Belle%20Arti%20Catania!5e0!3m2!1sit!2sit!4v1714042400978!5m2!1sit!2sit" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <h2 class="testo-dx">L'inaugurazione si terrà il 01/05/24 ore 18:00 presso l'Accademia di Belle Arti di Catania - Via Franchetti n° 5 (CT).</h2>
+                        <h2 class="testo-dx">La mostra sarà visitabile tutti i giorni nel periodo 1-31 Maggio 2024.</h2>
+                        <iframe id="mappa-aba" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1582.3945509180603!2d15.074661836220864!3d37.51289199745738!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1313fcd2c25c1883%3A0xbe3c697761685651!2sAccademia%20di%20Belle%20Arti%20Catania!5e0!3m2!1sit!2sit!4v1714042400978!5m2!1sit!2sit" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
             </div>
@@ -136,15 +139,15 @@
     </main>
 
     <footer>
-        <hr/>
-        <div>
-            <p>2024 - Accademia di Belle Arti di Catania</p>
-            <div>
-                <div>
+        <hr id="hr-footer"/>
+        <div id="blocco-footer">
+            <p id="aba-footer">2024 - Accademia di Belle Arti di Catania</p>
+            <div id="info-footer-icons">
+                <div id="info-footer">
                     <p>Chi siamo</p>
                     <p>Privacy</p>
                 </div>
-                <div>
+                <div id="icons-footer">
                     <img src="/icons/twitter.svg"></img>
                     <img src="/icons/facebook.svg"></img>
                     <img src="/icons/instagram.svg"></img>
