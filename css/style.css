@@ -31,11 +31,16 @@ header {
     position: fixed;
     width: 100%;
     color: #F5F5F5;
+    z-index: 10;
 }
 
 .header-scrolled {
     background-color: #141414;
     color: #F5F5F5;
+}
+
+.header-scrolled > #hr-nav {
+    display: none;
 }
 
 #hr-nav {
@@ -59,7 +64,7 @@ header {
 }
 
 #navbar-list li :hover {
-    font-weight: bold;
+    font-weight: 600;
     text-decoration: underline;
 }
 
@@ -70,7 +75,7 @@ header {
 }
 
 header p {
-    font-weight: bold;
+    font-weight: 600;
 }
 
 #navbar-list {
@@ -105,14 +110,16 @@ header p {
 
 #hero-sottotitolo {
     font-size: 2vw;
-    font-weight: bold;
+    font-weight: 600;
+    line-height: 1.3;
     width: 30vw;
     margin-bottom: 16px;
 }
 
 #hero-paragrafo {
-    font-size: 1.5vw;
+    font-size: 1.4vw;
     width: 30.1vw;
+    line-height: 1.3;
 }
 
 
@@ -134,9 +141,7 @@ header p {
 .testo-artisti-in-mostra img {
     width: 195.09px;
     height: 230.93px;
-    margin: 0 10px;
     border-radius: 20px;
-    margin: 0 22px 22px 0px;
     object-fit: cover;
 }
 
@@ -196,6 +201,17 @@ h1 {
     gap: 32px;
 }
 
+#info-footer a {
+    text-decoration: none;
+    color: #141414;
+}
+
+#info-footer :hover {
+    text-decoration: underline;
+    color: #7f7f7f;
+}
+
+
 #info-footer-icons {
     display: flex;
     justify-content: space-between;
@@ -207,3 +223,66 @@ h1 {
     gap: 32px;
     display: inherit;
 }
+
+/*Card artisti*/
+
+.blocco-card {
+    display: flex;
+    margin-bottom: 22px;
+}
+
+.card {
+    padding-inline: 10px;
+}
+
+.card-title {
+    background-color: #141414F0;
+    color: #F5F5F5;
+    margin-top: -52px;
+    position: relative;
+    padding: 12px 12px 12px 20px;
+    border-radius: 0 0 20px 20px;
+    font-weight: 600;
+}
+
+
+/*PAGINA ARTISTI - classi css della homepage ripetute con l'aggiunta del numero 2*/
+
+.testo-artisti-in-mostra2 {
+    display: flex;
+    margin-bottom: 60px;
+}
+
+.testo-artisti-in-mostra2 img {
+    width: 312px;
+    height: 335px;
+}
+
+.sezione-artisti-in-mostra2 h1 {
+    margin-left: 6.6vw;
+}
+
+.blocco-card2 {
+    margin: 0 auto
+}
+
+.card2 {
+    padding-inline: 30px;
+}
+
+.card-title2 {
+    height: 55px;
+    font-size: 25px;
+}
+
+.card-title2 p {
+    padding-top: 10px;
+}
+
+#sezione-artisti-in-mostra2 {
+    margin: 60px 6.6vw 60px 6.6vw;
+}
+
+/*PAGINA MOSTRA*/
+
+/*PAGINA INFO*/

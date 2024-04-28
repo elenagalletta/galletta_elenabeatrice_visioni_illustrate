@@ -1,4 +1,4 @@
-const header = document.getElementById('header');
+const nav = document.getElementById('header');
 window.onscroll = function () { 
     if (window.scrollY >= 200) {
         nav.classList.add("header-scrolled");
