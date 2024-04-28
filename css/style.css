@@ -30,8 +30,25 @@ h2 {
 header {
     position: fixed;
     width: 100%;
-    color: #F5F5F5;
     z-index: 10;
+}
+
+.header-light {
+    color: #F5F5F5;
+    background-color: #14141400;
+}
+
+.header-dark {
+    color:#141414;
+    background-color: #F5F5F500;
+}
+
+.hero-light {
+    color: #F5F5F5;
+}
+
+.hero-dark {
+    color:#141414;
 }
 
 .header-scrolled {
@@ -45,7 +62,7 @@ header {
 
 #hr-nav {
     border-top: 1px;
-    color: #F5F5F5;
+    color: inherit;
     margin-inline: 60px;
 }
 
@@ -53,14 +70,13 @@ header {
     display: flex;
     list-style-type: none;
     gap: 30px;
-    color: #F5F5F5;
     width: fit-content;
     text-align: center;
 }
 
 #navbar-list ul a {
     text-decoration: none;
-    color: #F5F5F5;
+    color: inherit;
 }
 
 #navbar-list li :hover {
