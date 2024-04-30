@@ -261,6 +261,23 @@ h1 {
     font-weight: 600;
 }
 
+/*Animazione card artisti*/
+
+.card-animazione {
+    border-radius: 20px;
+}
+
+.card-animazione a {
+    text-decoration: none;
+}
+
+
+.card-animazione:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    /*transform: translateY(-10px);*/
+    transform: scale(1.05);
+}
+
 
 /*PAGINA ARTISTI - classi css della homepage ripetute con l'aggiunta del numero 2*/
 
@@ -289,6 +306,7 @@ h1 {
 .card-title2 {
     height: 55px;
     font-size: 25px;
+    margin-top: -85px;
 }
 
 .card-title2 p {
@@ -299,6 +317,27 @@ h1 {
     margin: 60px 6.6vw 60px 6.6vw;
 }
 
-/*PAGINA MOSTRA*/
 
-/*PAGINA INFO*/
+/*Pagine dettaglio artisti*/
+
+.elenco-opere a {
+    color: inherit;
+}
+
+#button {
+    display: inline-block;
+    margin: 60px 6.6vw;
+}
+
+/*Pagine dettaglio artisti - Sanna Mander*/
+
+#elenco-opere-sannamander a:hover {
+    color: #6dc2a4;
+}
+
+/*Pagine dettaglio artisti - Michelle Thompson*/
+
+#elenco-opere-michellethompson a:hover {
+    color: palevioletred;
+}
+
