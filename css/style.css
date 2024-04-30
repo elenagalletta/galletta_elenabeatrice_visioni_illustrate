@@ -341,3 +341,8 @@ h1 {
     color: palevioletred;
 }
 
+/*Pagine dettaglio artisti - Icinori*/
+#elenco-opere-icinori a:hover {
+    /*color: #e92e0e*/
+    color: #e6954a
+}
