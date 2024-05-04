@@ -12,16 +12,12 @@ body {
     margin: 0;
 }
 
-img {
-    max-width: 100%;
-}
-
 h1 {
-    font-size: 32px;
+    font-size: 2.06vw;
 }
 
 h2 {
-    font-size: 20px;
+    font-size: 1.3vw;
     font-weight: normal;
 }
 
@@ -94,10 +90,6 @@ header p {
     font-weight: 600;
 }
 
-#navbar-list {
-    align-items: baseline;
-}
-
 .nav-item {
     width: 60px;
     text-align: center;
@@ -142,7 +134,7 @@ header p {
 /*Sezioni del main*/
 
 #sezione-inaugurazione, #sezione-artisti-in-mostra, #sezione-info-utili {
-    margin: 60px 6.6vw 100px 6.6vw;
+    margin: 3.9vw 6.6vw 6.51vw 6.6vw;
 }
 
 #testo-inaugurazione, .testo-artisti-in-mostra, .testo-info-utili {
@@ -155,8 +147,8 @@ header p {
 }
 
 .testo-artisti-in-mostra img {
-    width: 195.09px;
-    height: 230.93px;
+    width: 220px;
+    height: 250px;
     border-radius: 20px;
     object-fit: cover;
 }
@@ -173,11 +165,11 @@ h1 {
 
 .testo-sx {
     font-weight: bold;
-    width: 307px;
+    width: 30vw;
 }
 
 .testo-dx {
-    width: 644px;
+    width: 41.92vw;
     margin-bottom: 20px;
 }
 
@@ -186,8 +178,8 @@ h1 {
 }
 
 #mappa-aba {
-    width: 644px;
-    height: 522px;
+    width: 41.92vw;
+    height: 33.98vw;
     margin-top: 40px;
 }
 
@@ -243,18 +235,22 @@ h1 {
 /*Card artisti*/
 
 .blocco-card {
-    display: flex;
-    margin-bottom: 22px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 0.65vw;
 }
+
 
 .card {
     padding-inline: 10px;
+    width: 220px;
+    height: 250px;
 }
 
 .card-title {
     background-color: #141414F0;
     color: #F5F5F5;
-    margin-top: -52px;
+    margin-top: -54px;
     position: relative;
     padding: 12px 12px 12px 20px;
     border-radius: 0 0 20px 20px;
@@ -274,7 +270,6 @@ h1 {
 
 .card-animazione:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    /*transform: translateY(-10px);*/
     transform: scale(1.05);
 }
 
@@ -289,6 +284,7 @@ h1 {
 .testo-artisti-in-mostra2 img {
     width: 312px;
     height: 335px;
+    object-fit: cover;
 }
 
 .sezione-artisti-in-mostra2 h1 {
@@ -343,6 +339,28 @@ h1 {
 
 /*Pagine dettaglio artisti - Icinori*/
 #elenco-opere-icinori a:hover {
-    /*color: #e92e0e*/
     color: #e6954a
+}
+
+
+/*Responsive design*/
+
+@media (max-width: 1100px) {
+    h1 {
+        font-size: 2.5vw;
+    }
+
+    h2 {
+        font-size: 1.6vw;
+    }
+}
+
+@media (max-width: 800px) {
+    h1 {
+        font-size: 3.125vw;
+    }
+
+    h2 {
+        font-size: 2vw;
+    }
 }
