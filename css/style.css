@@ -146,13 +146,6 @@ header p {
     margin: 0 0 60px 0;
 }
 
-.testo-artisti-in-mostra img {
-    width: 220px;
-    height: 250px;
-    border-radius: 20px;
-    object-fit: cover;
-}
-
 .testo-artisti-in-mostra {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -187,6 +180,58 @@ h1 {
     margin-bottom: 60px;
 }
 
+/*Card artisti*/
+
+.blocco-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 0.65vw;
+}
+
+
+.card {
+    padding-inline: 10px;
+    width: 220px;
+    height: 250px;
+}
+
+.card img {
+    width: 220px;
+    height: 250px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.card-title {
+    background-color: #141414F0;
+    color: #F5F5F5;
+    margin-top: -54px;
+    position: relative;
+    padding: 12px 12px 12px 20px;
+    border-radius: 0 0 20px 20px;
+    font-weight: 600;
+}
+
+.sezione-artisti-in-mostra-box-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+/*Animazione card artisti*/
+
+.card-animazione {
+    border-radius: 20px;
+}
+
+.card-animazione a {
+    text-decoration: none;
+}
+
+
+.card-animazione:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+}
 
 /*Footer*/
 
@@ -232,87 +277,28 @@ h1 {
     display: inherit;
 }
 
-/*Card artisti*/
-
-.blocco-card {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin-bottom: 0.65vw;
-}
-
-
-.card {
-    padding-inline: 10px;
-    width: 220px;
-    height: 250px;
-}
-
-.card-title {
-    background-color: #141414F0;
-    color: #F5F5F5;
-    margin-top: -54px;
-    position: relative;
-    padding: 12px 12px 12px 20px;
-    border-radius: 0 0 20px 20px;
-    font-weight: 600;
-}
-
-/*Animazione card artisti*/
-
-.card-animazione {
-    border-radius: 20px;
-}
-
-.card-animazione a {
-    text-decoration: none;
-}
-
-
-.card-animazione:hover {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    transform: scale(1.05);
-}
-
 
 /*PAGINA ARTISTI - classi css della homepage ripetute con l'aggiunta del numero 2*/
 
-.testo-artisti-in-mostra2 {
-    display: flex;
-    margin-bottom: 60px;
+.sezione-artisti-in-mostra-box-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: fit-content;
+    row-gap: 60px;
+    column-gap: 50px;
+    margin: 0 auto;
 }
 
-.testo-artisti-in-mostra2 img {
-    width: 312px;
-    height: 335px;
-    object-fit: cover;
+.card-artisti, .card-artisti img {
+    width: 230px;
+    height: 280px;
 }
 
-.sezione-artisti-in-mostra2 h1 {
-    margin-left: 6.6vw;
+.card-artisti .card-title {
+    padding: 22px 12px 22px 20px;
+    margin-top: -74px;
+    font-size: 18px;
 }
-
-.blocco-card2 {
-    margin: 0 auto
-}
-
-.card2 {
-    padding-inline: 30px;
-}
-
-.card-title2 {
-    height: 55px;
-    font-size: 25px;
-    margin-top: -85px;
-}
-
-.card-title2 p {
-    padding-top: 10px;
-}
-
-#sezione-artisti-in-mostra2 {
-    margin: 60px 6.6vw 60px 6.6vw;
-}
-
 
 /*Pagine dettaglio artisti*/
 
@@ -353,6 +339,11 @@ h1 {
     h2 {
         font-size: 1.6vw;
     }
+
+    .sezione-artisti-in-mostra-box-card {
+        column-gap: none;
+        width: 100%;
+    }
 }
 
 @media (max-width: 800px) {
@@ -362,5 +353,16 @@ h1 {
 
     h2 {
         font-size: 2vw;
+    }
+
+    .sezione-artisti-in-mostra-box-card {
+        grid-template-columns: 1fr 1fr;
+        width: fit-content;
+    }
+}
+
+@media (max-width: 600px) {
+    .sezione-artisti-in-mostra-box-card {
+        grid-template-columns: 1fr;
     }
 }
