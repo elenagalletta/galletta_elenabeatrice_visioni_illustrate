@@ -63,6 +63,10 @@ header {
     display: none;
 }
 
+.header-scrolled svg {
+    fill: #F5F5F5 !important;
+}
+
 #marchio-sito {
     color: inherit;
 }
