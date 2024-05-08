@@ -13,11 +13,11 @@ body {
 }
 
 h1 {
-    font-size: 2.06vw;
+    font-size: 24px;
 }
 
 h2 {
-    font-size: 1.3vw;
+    font-size: 20px;
     font-weight: normal;
 }
 
@@ -95,6 +95,99 @@ header p {
     text-align: center;
 }
 
+/*Hamburger menu*/
+
+#hamburger-menu {
+    background-color: #141414F0;
+    position: fixed;
+    z-index: 20;
+    width: 100%;
+    height: 100%;
+    display: none;
+    backdrop-filter: blur(4px);
+}
+
+.menu-light svg {
+    fill: #F5F5F5;
+}
+
+.menu-dark svg {
+    fill: #141414;
+}
+
+.menu-item a {
+    text-decoration: none;
+    color: #F5F5F5;
+    font-size: 22px;
+}
+
+.menu-item :hover {
+    font-weight: 600;
+}
+
+.menu-icon {
+    width: 18px;
+    margin-right: 16px;
+}
+
+#menu {
+    margin-top: 60px;
+}
+
+#menu p {
+    color: #F5F5F5F0;
+    font-size: 28px;
+    font-weight: 600;
+    margin: 0 0 30px 18vw;
+}
+
+#menu-list {
+    margin-left: 18vw;
+}
+
+.menu-item {
+    margin-bottom: 12px;
+    list-style-type: none;
+}
+
+
+#menu-list-footer {
+    display: flex;
+    list-style-type: none;
+    margin: 60px 0 0 18vw;
+    gap: 16px;
+}
+
+.menu-item-footer {
+    color: #F5F5F5;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+#menu-list-footer a {
+    text-decoration: none;
+}
+
+#menu-list-footer :hover {
+    text-decoration: underline;
+    color: #7f7f7f;
+}
+
+#menu-xmark {
+    width: 22px;
+    margin: 5vw 90vw 0;
+    pointer-events: none;
+}
+
+.menu-visible {
+    display: block !important;
+}
+
+#hamburger-button {
+    display: none;
+    width: 20px;
+    height: 10px;
+}
 
 /*Hero section*/
 
@@ -109,7 +202,6 @@ header p {
     top: 10vw;
     left: 6.6vw;
 }
-
 
 #hero-titolo {
     font-size: 6vw;
@@ -264,7 +356,6 @@ h1 {
     color: #7f7f7f;
 }
 
-
 #info-footer-icons {
     display: flex;
     justify-content: space-between;
@@ -324,45 +415,206 @@ h1 {
 }
 
 /*Pagine dettaglio artisti - Icinori*/
+
 #elenco-opere-icinori a:hover {
     color: #e6954a
 }
 
 
-/*Responsive design*/
+/*RESPONSIVE DESIGN*/
 
-@media (max-width: 1100px) {
-    h1 {
-        font-size: 2.5vw;
+@media (max-width: 1250px) {
+    .testo-artisti-in-mostra {
+        grid-template-columns: 1fr;
     }
 
-    h2 {
+    .blocco-card {
+        margin: 32px auto 32px auto;
+    }
+
+    #hero-paragrafo {
         font-size: 1.6vw;
+    }
+}
+
+@media (max-width: 1100px) {
+    
+    #hero-titolo {
+        font-size: 6.4vw;
+    }
+
+    #hero-sottotitolo {
+        font-size: 2.4vw;
+    }
+
+    #hero-paragrafo {
+        font-size: 2vw;
     }
 
     .sezione-artisti-in-mostra-box-card {
-        column-gap: none;
-        width: 100%;
+        column-gap: 12px;
+    }
+}
+
+@media (max-width: 950px) {
+    .sezione-artisti-in-mostra-box-card {
+        grid-template-columns: 1fr 1fr;
+        width: fit-content;
+    }
+
+    #mappa-aba {
+        height: 41.92vw;
     }
 }
 
 @media (max-width: 800px) {
+    
+    #navbar-list ul {
+        gap: 10px
+    }
+
     h1 {
-        font-size: 3.125vw;
+        font-size: 22px;
     }
 
     h2 {
-        font-size: 2vw;
+        font-size: 18px;
     }
 
     .sezione-artisti-in-mostra-box-card {
         grid-template-columns: 1fr 1fr;
         width: fit-content;
+        row-gap: 0;
+    }
+
+    .blocco-card {
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 0;
+    }
+
+    .card {
+        margin-bottom: 32px;
+    }
+
+    .testo-artisti-in-mostra {
+        margin-bottom: 32px;
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 650px) {
     .sezione-artisti-in-mostra-box-card {
         grid-template-columns: 1fr;
+    }
+
+    .blocco-card {
+        grid-template-columns: 1fr;
+        margin-top: 0;
+    }
+
+   .testo-artisti-in-mostra .testo-sx {
+        display: none;
+    }
+
+    .testo-artisti-in-mostra {
+        margin-bottom: 0;
+    }
+
+    .card {
+        margin-bottom: 32px;
+    }
+
+    #hero-section img {
+        width: 180%;
+    }
+
+    #testo-hero {
+        top: 18vw;
+    }
+
+    #hero-titolo {
+        font-size: 8.4vw;
+    }
+
+    #hero-sottotitolo {
+        font-size: 3.4vw;
+        width: 44vw;
+    }
+
+    #hero-paragrafo {
+        font-size: 3.2vw;
+        width: 44vw;
+    }
+
+    #testo-inaugurazione, .testo-info-utili {
+        grid-template-columns: 1fr;
+    }
+
+    #testo-inaugurazione h2, .testo-info-utili h2, #testo-inaugurazione .testo-dx, .testo-info-utili .testo-dx, .hr-sezione {
+        margin-bottom: 32px;
+    }
+
+    .testo-sx {
+        width: 300px;
+    }
+
+    .testo-dx {
+        width: 400px;
+    }
+
+    #mappa-aba {
+        width: 100%;
+        height: 400px;
+    }
+}
+
+@media (max-width: 550px) {
+    #navbar-list {
+        display: none;
+    }
+
+    #hamburger-button {
+        display: block;
+    }
+}
+
+@media (max-width: 500px) {
+    
+    #testo-hero {
+        top: 22vw;
+    }
+    
+    .testo-dx {
+        width: 100%;
+    }
+
+    #info-footer {
+        gap: 20px;
+    }
+    
+    #icons-footer {
+        gap: 10px;
+        height: 16px;
+        align-self: center;
+        justify-content: end;
+    }
+}
+
+@media (max-width: 400px) {
+    
+    #testo-hero {
+        top: 26vw;
+    }
+    
+    #hero-titolo {
+        font-size: 34px;
+    }
+
+    #hero-sottotitolo {
+        font-size: 18px;
+        width: 70vw;
+    }
+
+    #hero-paragrafo {
+        display: none;
     }
 }
