@@ -69,8 +69,15 @@ header {
 
 #hr-nav {
     border-top: 1px;
-    color: inherit;
     margin-inline: 60px;
+}
+
+.hr-nav-light {
+    border-color: #F5F5F5;
+}
+
+.hr-nav-dark {
+    border-color: #141414;
 }
 
 #navbar-list ul {
