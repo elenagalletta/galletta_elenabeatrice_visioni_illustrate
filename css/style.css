@@ -3,6 +3,7 @@
     padding: 0;
     transition: all 0.2s ease-in-out;
     scroll-behavior: smooth;
+    text-decoration: none;
 }
 
 body {
@@ -60,6 +61,10 @@ header {
 
 .header-scrolled > #hr-nav {
     display: none;
+}
+
+#marchio-sito {
+    color: inherit;
 }
 
 #hr-nav {
