@@ -530,7 +530,9 @@ h1 {
     }
 
     #hero-section img {
-        width: 180%;
+        height: 90vw;
+        object-fit: cover;
+        object-position: left bottom;
     }
 
     #testo-hero {
